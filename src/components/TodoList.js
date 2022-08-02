@@ -35,6 +35,7 @@ function TodoList() {
     // function to mark todo as complete
     const completeTodo = id => {
       let updatedTodos = todos.map(todo => {
+        // toggles true or false
         if(todo.id === id) {
           todo.isComplete = !todo.isComplete
         }
