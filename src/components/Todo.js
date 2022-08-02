@@ -23,6 +23,9 @@ const Todo = ({ todos, completeTodo, removeTodo, updateTodo }) => {
   }
 
   return todos.map((todo, index) => (
+      // checks to see if todo is complete or not, sets class based on if true or not
+      // pass in todo text 
+      // link icons to their respective functions
       <div className={todo.isComplete ? 'todoRow complete' : 'todoRow'} key={index}>
           <div key={todo.id}>
               {todo.text}
